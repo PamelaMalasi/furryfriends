@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pie_data.name }} By {{ pie_data.first_name }} </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/pieinfo.css">
+</head>
+
+<body>
+  <div class="container">
+      <div class="row">
+          <div class="col">
+              <form action="/dashboard" method="get">
+                  <input type="submit" class="btn btn-primary" value="Dashboard">
+              </form>
+          </div>
+          <div class="col">
+              <form action="/logout" method="post">
+                  <input type="submit" class="btn btn-danger" value="Log Out">
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+          <div class="col">
+              <h1>{{ pie_data.name }} By {{ pie_data.first_name }}</h1>
+              <p>{{ pie_data.filling }}</p>
+              <p>URGENCY: {{ pie_data.crust }}</p>
+              <p>Will you volunteer?</p>
+              {% if pie_data.consumer_id == session['user_id'] %}
+              <form action="/dislike/{{ pie_data.id }}" method="post">
+                  <input type="submit" class="btn btn-danger" value="I will not volunteer">
+              </form>
+              {% else %}
+              <form action="/like/{{ pie_data.id }}" method="post">
+                  <input type="submit" class="btn btn-success" value="I will volunteer">
+              </form>
+              {% endif %}
+          </div>
+      </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

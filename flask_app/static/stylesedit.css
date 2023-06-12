@@ -1,0 +1,25 @@
+body {
+    background-image: url("/static/alb1.jpeg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    margin-top: 20px;
+}
+
+.dashboard-container,
+.logout-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-container {
+    background-color: lavender;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}

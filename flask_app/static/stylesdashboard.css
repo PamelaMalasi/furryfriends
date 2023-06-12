@@ -1,0 +1,86 @@
+body {
+    background-image: url("/static/alb1.jpeg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .user-pies {
+    background-color: #e3dff1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .user-pies h1 {
+    margin-top: 0;
+  }
+
+  .user-pies table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .user-pies th,
+  .user-pies td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  .user-pies th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+
+  .user-pies tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .add-pie-form {
+    color: black;
+    background-color: #e3dff1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .add-pie-form h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .add-pie-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .add-pie-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .add-pie-form input[type="submit"] {
+    background-color: #CBC3E3;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .add-pie-form input[type="submit"]:hover {
+    background-color: #CBC3E3;
+  }
+
+
+
+
+
+

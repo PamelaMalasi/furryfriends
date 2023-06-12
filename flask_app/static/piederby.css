@@ -1,0 +1,51 @@
+body {
+    background-image: url("/static/alb1.jpeg");
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .nav-buttons form {
+    margin-bottom: 10px;
+  }
+
+  .table-container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .table-container h1 {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #F5F5F5;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #F9F9F9;
+  }
+
+  a {
+    text-decoration: none;
+  }
